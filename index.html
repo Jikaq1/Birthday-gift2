@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>birthday gift for youuu 🥰🥰</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+    <section id="section1">
+        <div>
+            <h6> .</h6>
+            <p> .</p>
+            <p>. </p>
+            <p>. </p>
+            
+            <button onclick="openImageModal('image/Hemo.png')">🎁  Click me!!</button>
+
+            <!-- Modal for Image -->
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal('myModal')">&times;</span>
+                <img id="modal-content" class="modal-content" style="width: 800px; height: 800px; object-fit: contain;">
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="floating-images">
+            <img src="image/Nun1.jpg" class="float-img" alt="Floating Image 1">
+            <img src="image/nun6.jpg" class="float-img" alt="Floating Image 2">
+            <img src="image/nun5.jpg" class="float-img" alt="Floating Image 3">
+            <img src="image/nun4.jpg" class="float-img" alt="Floating Image 4">
+        </div>
+    
+        <div style="text-align: center;">
+            <img src="image/gfg22.png" width="500" height="500">
+            <br>
+            <p style="font-size: 24px;">May happiness fill your everyday life 🥰🥰 </p>
+            <!-- or you can use an h1, h2, etc. for different heading sizes -->
+            <!-- <h2>Your text here</h2> -->
+        </div>
+    </section>
+
+    
+
+
+
+    <section id="section4" 
+    style="background-image: url(image/Back06.png);">
+        <div>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>🎹 Click the image to play/pause the music 𓍢ִ໋🌷͙֒</h3>
+            <img id="playPauseGif" src="https://cdn.pixabay.com/animation/2023/08/22/07/30/07-30-19-708_512.gif" alt="Play/Pause" onclick="togglePlayPause()">
+            <br>
+            <label for="volumeControl">Volume:</label>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value)">
+        
+            <audio id="myAudio" loop>
+                <source src="audio/yousick.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <!-- New Section for Present Box -->
+    <section id="section5">
+        <div>
+            <h6>. </h6>
+            <br>
+            <br>
+            <br>
+            <p>Click the present box to reveal a surprise!🎁</p>
+            <img class="presentBox" id="presentBox"
+                src="image/New folder/gift box.png"
+                alt="Present Box Image">
+        </div>
+    </section>
+
+    <!-- The Present Box Modal -->
+    <div id="myModalBox" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="image/insertCake.png" alt="Opened Box Image"
+                style="width: 800px; height: 800px;"> <!-- Increased dimensions -->
+        </div>
+    </div>
+
+<section id="section3">
+        <div>
+            <h1>Unlock to read 👀</h1>
+
+            <div class="password-container">
+                <input type="password" id="digit1" maxlength="1" class="circle" oninput="moveToNext(this, 'digit2')">
+                <input type="password" id="digit2" maxlength="1" class="circle" oninput="moveToNext(this, 'digit3')">
+                <input type="password" id="digit3" maxlength="1" class="circle" oninput="moveToNext(this, 'digit4')">
+                <input type="password" id="digit4" maxlength="1" class="circle" oninput="moveToNext(this, 'digit5')">
+                <input type="password" id="digit5" maxlength="1" class="circle" oninput="moveToNext(this, 'digit6')">
+                <input type="password" id="digit6" maxlength="1" class="circle">
+            </div>
+
+            <button onclick="checkPassword()"> 💌 Unlock</button>
+            <button onclick="clearPassword()">Clear</button>
+        </div>
+    </section>
+
+    <!-- Modal for Secret Text -->
+<div id="myModal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal1()">&times;</span>
+        <img id="secretImage" src="image/Backsecre.png" alt="Secret Image" style="width:100%; max-width:1500px;">
+        
+    </div>
+</div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
